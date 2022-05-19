@@ -13,7 +13,7 @@ with open('config.json') as config_json:
     config = json.load(config_json)
 
 # Read the raw and cov file
-data_file_raw = config.pop('raw')
+data_file_raw = config.pop('fif')
 data_file_cov = config.pop('cov')
 
 # crop() the Raw data to save memory:
