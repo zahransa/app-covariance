@@ -28,7 +28,7 @@ report = mne.Report(title='Covariance example')
 #report.add_covariance(cov=data_file_cov, info=data_file_raw, title='Covariance')
 report.add_covariance(noise_cov, info=data_file_raw, title='Covariance')
 
-
+noise_cov.save(os.path.join('out_dir', 'cov.fif'))
 report.save('out_dir_report/report_cov.html', overwrite=True)
 
 
