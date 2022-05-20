@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import mne
+import os
 #to fix
 #qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
 import matplotlib
